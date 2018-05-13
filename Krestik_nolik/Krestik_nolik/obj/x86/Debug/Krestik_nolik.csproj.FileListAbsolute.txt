@@ -1,0 +1,11 @@
+c:\users\nio-19\documents\visual studio 2010\Projects\Krestik_nolik\Krestik_nolik\bin\Debug\Krestik_nolik.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\Krestik_nolik\Krestik_nolik\bin\Debug\Krestik_nolik.pdb
+c:\users\nio-19\documents\visual studio 2010\Projects\Krestik_nolik\Krestik_nolik\obj\x86\Debug\Krestik_nolik.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\Krestik_nolik\Krestik_nolik\obj\x86\Debug\Krestik_nolik.pdb
+C:\Users\nio-19\documents\visual studio 2010\Projects\Krestik_nolik\Krestik_nolik\obj\x86\Debug\Krestik_nolik.csprojResolveAssemblyReference.cache
+F:\Krestik_nolik\Krestik_nolik\bin\Debug\Krestik_nolik.exe
+F:\Krestik_nolik\Krestik_nolik\bin\Debug\Krestik_nolik.pdb
+F:\Krestik_nolik\Krestik_nolik\obj\x86\Debug\Krestik_nolik.csprojAssemblyReference.cache
+F:\Krestik_nolik\Krestik_nolik\obj\x86\Debug\Krestik_nolik.csproj.CoreCompileInputs.cache
+F:\Krestik_nolik\Krestik_nolik\obj\x86\Debug\Krestik_nolik.exe
+F:\Krestik_nolik\Krestik_nolik\obj\x86\Debug\Krestik_nolik.pdb
