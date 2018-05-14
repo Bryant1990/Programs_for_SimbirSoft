@@ -1,0 +1,7 @@
+C:\Users\Компьютер\source\repos\Krestik_nolik_ver_2.0\Krestik_nolik_ver_2.0\bin\Debug\Krestik_nolik_ver_2.0.exe.config
+C:\Users\Компьютер\source\repos\Krestik_nolik_ver_2.0\Krestik_nolik_ver_2.0\bin\Debug\Krestik_nolik_ver_2.0.exe
+C:\Users\Компьютер\source\repos\Krestik_nolik_ver_2.0\Krestik_nolik_ver_2.0\bin\Debug\Krestik_nolik_ver_2.0.pdb
+C:\Users\Компьютер\source\repos\Krestik_nolik_ver_2.0\Krestik_nolik_ver_2.0\obj\Debug\Krestik_nolik_ver_2.0.csprojAssemblyReference.cache
+C:\Users\Компьютер\source\repos\Krestik_nolik_ver_2.0\Krestik_nolik_ver_2.0\obj\Debug\Krestik_nolik_ver_2.0.csproj.CoreCompileInputs.cache
+C:\Users\Компьютер\source\repos\Krestik_nolik_ver_2.0\Krestik_nolik_ver_2.0\obj\Debug\Krestik_nolik_ver_2.0.exe
+C:\Users\Компьютер\source\repos\Krestik_nolik_ver_2.0\Krestik_nolik_ver_2.0\obj\Debug\Krestik_nolik_ver_2.0.pdb
