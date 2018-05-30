@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.IO;
+using System.Data.Entity;
 
 namespace KrestikNolikWithInterface
 {
@@ -12,24 +12,13 @@ namespace KrestikNolikWithInterface
         {
             int matrixSize = GetSizeMatrix(); //присваиваем переменную, хранящую размерность матрицы. Размерность определяется через метод GetSizeMatrix
             int[,] matrix = new int[matrixSize, matrixSize]; //задаем двумерный массив, представляющий нашу матрицу nxn, где n - размерность матрицы, введенная оператором            
-            SetDefaultMatrix(matrixSize, matrix);         
-            //создаем метод, в котором будет построена первичная матрица, содержащая значения -1
+            SetDefaultMatrix(matrixSize, matrix); //создаем метод, в котором будет построена первичная матрица, содержащая значения -1
             bool FirstPlayerMove = true; //присваиваем переменную, отвечающую за то, какое значение должно записываться в матрицу (1 или 0)
             int matrixIndexI, matrixIndexJ;
             int firstPole = 0;
             StatusGame SG = new StatusGame(matrix, matrixSize, firstPole);
             DrawingGame DG = new DrawingGame(matrix, matrixSize);
-            DG.IDraw();
-            //File.Create("C:\\KNOutput.sql");
-            FileStream SQLfile = new FileStream("files/KNOutput.sql", FileMode.Append); //создаем файловый поток
-            StreamWriter SQLfileWriter = new StreamWriter(SQLfile); //создаем «потоковый писатель» и связываем его с файловым потоком 
-            /*SQLfileWriter.WriteLine("CREATE DATABASE KNOutputDB"); //записываем в файл
-            SQLfileWriter.WriteLine("CREATE TABLE Users ( "); //записываем в файл
-            SQLfileWriter.WriteLine("UserID INT NOT NULL,");
-            SQLfileWriter.WriteLine("FirstName VARCHAR(50) NOT NULL,");
-            SQLfileWriter.WriteLine("LastName VARCHAR(50) NOT NULL,");
-            SQLfileWriter.WriteLine("Age INT NULL");
-            SQLfileWriter.WriteLine(");");*/
+            DG.IDraw();            
             while (true) //создаем цикл, выход из которого будет в случае совпадения значений в строках, вертикалях, диагоналях или в случае завершения пустых для ввода ячеек
             {
                 GetMatrixIndex(matrix, matrixSize, out matrixIndexI, out matrixIndexJ); //присваиваем индекс матрицы для ввода через метод GetMatrixIndex                
@@ -37,10 +26,16 @@ namespace KrestikNolikWithInterface
                 DG.IDraw();                                                
                 if (SG.IWinner() == true)
                 {
-                    Console.WriteLine("Игра завершена. Победитель игрок №{0}", SG.IfirstPole + 1);
-                    SQLfileWriter.WriteLine("INSERT INTO Users(FirstName, Date) VALUES('Игрок №{0}', '{1}')", SG.IfirstPole + 1, DateTime.Now);                   
+                    string winner = "игрок №" + (SG.IfirstPole + 1).ToString();
+                    Console.WriteLine("Игра завершена. Победитель {0}, Дата выигрыша: {1}", winner, DateTime.Now.ToString());
+                    SampleContext context = new SampleContext();
+                    context.Winner.Add(new Winners()
+                    {
+                        FirstName = winner,
+                        Date = DateTime.Now.ToString()
+                    });
 
-                    SQLfileWriter.Close(); //закрываем поток. Не закрыв поток, в файл ничего не запишется
+                    context.SaveChanges();                    
                     break;
                 }
                 else
