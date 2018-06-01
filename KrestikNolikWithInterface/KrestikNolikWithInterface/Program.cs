@@ -21,6 +21,7 @@ namespace KrestikNolikWithInterface
             DG.IDraw();            
             while (true) //создаем цикл, выход из которого будет в случае совпадения значений в строках, вертикалях, диагоналях или в случае завершения пустых для ввода ячеек
             {
+                
                 GetMatrixIndex(matrix, matrixSize, out matrixIndexI, out matrixIndexJ); //присваиваем индекс матрицы для ввода через метод GetMatrixIndex                
                 MakeMove(ref FirstPlayerMove, ref matrix, matrixIndexI, matrixIndexJ, matrixSize); //создаем метод, предназначенный заполнить требуемую ячейку матрицы
                 DG.IDraw();                                                
