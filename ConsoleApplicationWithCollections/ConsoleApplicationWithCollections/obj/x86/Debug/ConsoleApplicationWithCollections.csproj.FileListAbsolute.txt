@@ -1,0 +1,5 @@
+c:\users\nio-19\documents\visual studio 2010\Projects\ConsoleApplicationWithCollections\ConsoleApplicationWithCollections\bin\Debug\ConsoleApplicationWithCollections.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\ConsoleApplicationWithCollections\ConsoleApplicationWithCollections\bin\Debug\ConsoleApplicationWithCollections.pdb
+c:\users\nio-19\documents\visual studio 2010\Projects\ConsoleApplicationWithCollections\ConsoleApplicationWithCollections\obj\x86\Debug\ConsoleApplicationWithCollections.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\ConsoleApplicationWithCollections\ConsoleApplicationWithCollections\obj\x86\Debug\ConsoleApplicationWithCollections.pdb
+C:\Users\nio-19\documents\visual studio 2010\Projects\ConsoleApplicationWithCollections\ConsoleApplicationWithCollections\obj\x86\Debug\ConsoleApplicationWithCollections.csprojResolveAssemblyReference.cache

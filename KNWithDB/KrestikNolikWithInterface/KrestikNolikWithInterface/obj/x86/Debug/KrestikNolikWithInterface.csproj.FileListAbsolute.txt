@@ -1,0 +1,10 @@
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.pdb
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.pdb
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.exe
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.pdb
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.csprojAssemblyReference.cache
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.csproj.CoreCompileInputs.cache
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.exe
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.pdb

@@ -1,0 +1,22 @@
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.pdb
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.exe
+c:\users\nio-19\documents\visual studio 2010\Projects\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.pdb
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.exe
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.pdb
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.csprojAssemblyReference.cache
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.csproj.CoreCompileInputs.cache
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.exe
+C:\Users\Компьютер\Documents\Visual Studio 2017\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.pdb
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.exe.config
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.exe
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\KrestikNolikWithInterface.pdb
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\EntityFramework.dll
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\EntityFramework.xml
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.csprojAssemblyReference.cache
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.csproj.CoreCompileInputs.cache
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.csproj.CopyComplete
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.exe
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\KrestikNolikWithInterface\KrestikNolikWithInterface\obj\x86\Debug\KrestikNolikWithInterface.pdb
