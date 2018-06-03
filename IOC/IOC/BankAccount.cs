@@ -44,9 +44,8 @@ namespace BankAccountNS
 
             if (amount < 0)
             {
-                throw new ArgumentOutOfRangeException("Некорректное значение  amount");
+                throw new ArgumentOutOfRangeException("Некорректное значение amount");
             }
-
             m_balance -= amount;
         }
 

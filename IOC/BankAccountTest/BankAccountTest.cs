@@ -21,7 +21,7 @@ namespace BankTest
 
             // assert 
             double actual = account.Balance;
-            Assert.AreEqual(expected, actual, 0.001, "Тест прошел корректно");
+            Assert.AreEqual(expected, actual, 0.001, "Тест прошел некорректно");
         }
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
@@ -33,8 +33,7 @@ namespace BankTest
             BankAccount account = new BankAccount("Сидоров", beginningBalance);
 
             // act
-            account.Debit(debitAmount);   
-            
+            account.Debit(debitAmount);            
         }
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
