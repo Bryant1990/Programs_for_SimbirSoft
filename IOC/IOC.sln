@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOC", "IOC\IOC.csproj", "{404E7527-CAC7-43C9-B7D3-C52E93152695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountTest", "BankAccountTest\BankAccountTest.csproj", "{A20D8D9E-2C6C-4FF1-A241-91AFF76ADA2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCTest", "BankAccountTest\IOCTest.csproj", "{A20D8D9E-2C6C-4FF1-A241-91AFF76ADA2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
