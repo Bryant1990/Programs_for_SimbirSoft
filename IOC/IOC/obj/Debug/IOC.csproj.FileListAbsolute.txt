@@ -3,3 +3,4 @@ C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\IOC\IOC\bin\Deb
 C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\IOC\IOC\obj\Debug\IOC.csproj.CoreCompileInputs.cache
 C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\IOC\IOC\obj\Debug\IOC.dll
 C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\IOC\IOC\obj\Debug\IOC.pdb
+C:\Users\Компьютер\source\repos\Programs_for_SimbirSoft\IOC\IOC\obj\Debug\IOC.csprojAssemblyReference.cache
