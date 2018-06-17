@@ -18,21 +18,28 @@ namespace OpenAvitoWithSeleniumToFindCats
 
         static void WorkWithChrome ()
         {
-            ChromeDriver Chrome;            
-            Chrome = new ChromeDriver(@"C:\Users\Компьютер\Downloads\chromedriver_win32");
-            //Chrome = new ChromeDriver();
+            ChromeDriver Chrome;
+            IWebElement UnivElem;
+            //Chrome = new ChromeDriver(@"C:\Users\Компьютер\Downloads\chromedriver_win32");
+            Chrome = new ChromeDriver();
             Chrome.Manage().Window.Maximize();
             Chrome.Navigate().GoToUrl("https://www.avito.ru/ulyanovsk");
             MainPage mainPage = new MainPage(Chrome);
-            mainPage.ClickPats();
+            UnivElem = mainPage.FindPatsInPage();
+            ClickThisElem(UnivElem);            
             Pats pats = new Pats(Chrome);
-            pats.ClickCats();
+            UnivElem = pats.FindCatsInPage();
+            ClickThisElem(UnivElem);            
             Cats cats = new Cats(Chrome);
             cats.MakeList();
             cats.FindCatWithMaxOrder();
             cats.ShowCats();                        
             Chrome.Quit();
             Console.ReadLine();
-        }        
+        }  
+        static void ClickThisElem(IWebElement UnivElem) //Element Object
+        {
+            UnivElem.Click();
+        }
     }
 }

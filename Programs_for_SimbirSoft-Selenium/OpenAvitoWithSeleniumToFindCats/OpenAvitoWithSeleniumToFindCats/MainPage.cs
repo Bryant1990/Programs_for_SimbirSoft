@@ -18,9 +18,10 @@ namespace OpenAvitoWithSeleniumToFindCats
         {
             this.Chrome = Chrome;
         }
-        public void ClickPats()
+        public IWebElement FindPatsInPage()
         {
-            Chrome.FindElement(RefPats).Click();
+            IWebElement RefPatsToClick = Chrome.FindElement(RefPats);
+            return RefPatsToClick;            
         }
     }
 }

@@ -17,8 +17,7 @@ namespace OpenAvitoWithSeleniumToFindCats
         By RefFirstCatInSearch = By.CssSelector("a.item-description-title-link");
         List<IWebElement> Cat, Orders;
         int maxIndexOrder;
-        int maxOrder;
-        
+        int maxOrder;        
         public Cats(ChromeDriver Chrome)
         {
             this.Chrome = Chrome;
