@@ -58,6 +58,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Letter.cs" />
+    <Compile Include="LoginPage.cs" />
+    <Compile Include="MainPage.cs" />
+    <Compile Include="PasswordPage.cs" />
+    <Compile Include="Reglament.cs" />
+    <Compile Include="SearchPage.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
