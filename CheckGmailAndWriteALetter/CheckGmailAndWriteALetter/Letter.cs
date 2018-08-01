@@ -48,6 +48,5 @@ namespace CheckGmailAndWriteALetter
         {
             chrome.FindElement(ButtonSent).Click();
         }
-
     }
 }

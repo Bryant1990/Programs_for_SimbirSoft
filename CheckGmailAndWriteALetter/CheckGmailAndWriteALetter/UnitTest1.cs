@@ -8,8 +8,8 @@ using OpenQA.Selenium.Support.UI;
 namespace CheckGmailAndWriteALetter
 {
     [TestClass]
-    public class UnitTest1
-    {
+    public class UnitTest
+    {        
         ChromeDriver chrome = new ChromeDriver();
         //ChromeDriver chrome = new ChromeDriver(@"C:\Users\Компьютер\Downloads\chromedriver_win32");
         string URL = "https://www.gmail.com";
@@ -18,11 +18,9 @@ namespace CheckGmailAndWriteALetter
         string PersonToSearchALetterFrom = "Филинин Илья";
         string MailToSentAMessage = "ilya.filinin@simbirsoft.com";
         string subject = "Тестовое задание. Сибгатуллов";
-
-
-
+        
         [TestMethod]
-        public void UnitTest()
+        public void UnitTestMethod()
         {            
             chrome.Manage().Window.Maximize();
             chrome.Navigate().GoToUrl(URL);

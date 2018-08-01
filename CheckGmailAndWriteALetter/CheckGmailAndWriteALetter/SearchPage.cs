@@ -7,7 +7,6 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
-
 namespace CheckGmailAndWriteALetter
 {
     class SearchPage
@@ -29,6 +28,5 @@ namespace CheckGmailAndWriteALetter
             chrome.FindElement(FromPerson).SendKeys(PersonToSearchALetterFrom);
             chrome.FindElement(FromPerson).SendKeys(Keys.Enter);
         }
-
     }
 }

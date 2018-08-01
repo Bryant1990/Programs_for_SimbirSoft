@@ -24,10 +24,9 @@ namespace CheckGmailAndWriteALetter
         {
             new WebDriverWait(chrome, TimeSpan.FromSeconds(20))
                 .Until(chr => chrome.FindElement(Password).Displayed);
-        chrome.FindElement(Password).SendKeys(password);
-        chrome.FindElement(Password).SendKeys(Keys.Enter);
+            chrome.FindElement(Password).SendKeys(password);
+            chrome.FindElement(Password).SendKeys(Keys.Enter);
         }
     }
-
 }
 
