@@ -1,9 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
-using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Chrome;
 
 
 namespace CheckGmailAndWriteALetter
@@ -11,7 +9,8 @@ namespace CheckGmailAndWriteALetter
     [TestClass]
     public class UnitTest
     {
-        EdgeDriver chrome = new EdgeDriver(@"C:\Users\Компьютер\Downloads");
+        EdgeDriver chrome = new EdgeDriver();
+        //EdgeDriver chrome = new EdgeDriver(@"C:\Users\Компьютер\Downloads");
         //ChromeDriver chrome = new ChromeDriver();
         //ChromeDriver chrome = new ChromeDriver(@"C:\Users\Компьютер\Downloads\chromedriver_win32");
         string URL = "https://www.gmail.com";
@@ -26,10 +25,16 @@ namespace CheckGmailAndWriteALetter
         {            
             chrome.Manage().Window.Maximize();
             chrome.Navigate().GoToUrl(URL);
-            LoginPage LP = new LoginPage(mail, chrome);
-            LP.EnterLogin();
-            PasswordPage PP = new PasswordPage(password, chrome);
-            PP.EnterPassword();
+            StartPage SPage = new StartPage(chrome);
+            SPage.SignInLoginPage();
+            try
+            {
+                LoginPage LP = new LoginPage(mail, chrome);
+                LP.EnterLogin();
+                PasswordPage PP = new PasswordPage(password, chrome);
+                PP.EnterPassword();
+            }
+            catch (Exception) { }
             try
             {
                 Reglament ment = new Reglament(chrome);

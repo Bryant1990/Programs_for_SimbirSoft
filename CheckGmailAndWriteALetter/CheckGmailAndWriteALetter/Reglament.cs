@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
 
 
@@ -12,11 +9,11 @@ namespace CheckGmailAndWriteALetter
 {
     class Reglament
     {
-        private ChromeDriver chrome;
+        private EdgeDriver chrome;
         private By ArrowDown = By.CssSelector("div.XHsn7e.dURtfb.Tk2jV");
         private By ButtonAccept = By.CssSelector("span.RveJvd.snByac");
 
-        public Reglament(ChromeDriver chrome)
+        public Reglament(EdgeDriver chrome)
         {
             this.chrome = chrome;
         }

@@ -64,7 +64,8 @@
     <Compile Include="PasswordPage.cs" />
     <Compile Include="Reglament.cs" />
     <Compile Include="SearchPage.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="StartPage.cs" />
+    <Compile Include="UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

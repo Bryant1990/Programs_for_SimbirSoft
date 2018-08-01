@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
 
 
@@ -12,7 +9,7 @@ namespace CheckGmailAndWriteALetter
 {
     class Letter
     {
-        private ChromeDriver chrome;
+        private EdgeDriver chrome;
         private By ToPerson = By.Name("to");
         private By Subject = By.Name("subjectbox");
         private By Message = By.ClassName("Am");
@@ -20,7 +17,7 @@ namespace CheckGmailAndWriteALetter
         private string MailToSentAMessage;
         private string subject;
 
-        public Letter(string MailToSentAMessage, string subject, ChromeDriver chrome)
+        public Letter(string MailToSentAMessage, string subject, EdgeDriver chrome)
         {
             this.chrome = chrome;
             this.MailToSentAMessage = MailToSentAMessage;

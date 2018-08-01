@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
 
 namespace CheckGmailAndWriteALetter
 {
     class SearchPage
     {
-        private ChromeDriver chrome;
+        private EdgeDriver chrome;
         private By FromPerson = By.ClassName("ZH");
         private string PersonToSearchALetterFrom;
 
-        public SearchPage(string PersonToSearchALetterFrom, ChromeDriver chrome)
+        public SearchPage(string PersonToSearchALetterFrom, EdgeDriver chrome)
         {
             this.chrome = chrome;
             this.PersonToSearchALetterFrom = PersonToSearchALetterFrom;

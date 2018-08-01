@@ -1,27 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
 
 namespace CheckGmailAndWriteALetter
 {
     class LoginPage
     {
-        private ChromeDriver chrome;
+        private EdgeDriver chrome;
         private By Login = By.Name("identifier");
         private string mail;
 
-        public LoginPage(string mail, ChromeDriver chrome)
+        public LoginPage(string mail, EdgeDriver chrome)
         {
             this.chrome = chrome;
             this.mail = mail;
         }
         public void EnterLogin()
         {
+            new WebDriverWait(chrome, TimeSpan.FromSeconds(30))
+                .Until(chr => chrome.FindElement(Login).Displayed);
             chrome.FindElement(Login).SendKeys(mail);
             chrome.FindElement(Login).SendKeys(Keys.Enter);
         }

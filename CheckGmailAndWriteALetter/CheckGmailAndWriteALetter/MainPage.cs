@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
 
 
@@ -12,12 +9,12 @@ namespace CheckGmailAndWriteALetter
 {
     class MainPage
     {
-        private ChromeDriver chrome;
+        private EdgeDriver chrome;
         private By Search = By.CssSelector("div.aoq");
         private By WriteALetter = By.CssSelector("div.T-I.J-J5-Ji.T-I-KE.L3");
         private By NumberOfLetters = By.CssSelector("span.ts");
 
-        public MainPage(ChromeDriver chrome)
+        public MainPage(EdgeDriver chrome)
         {
             this.chrome = chrome;
         }
