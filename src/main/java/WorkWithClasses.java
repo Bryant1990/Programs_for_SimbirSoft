@@ -1,0 +1,116 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.io.*;
+import java.util.*;
+
+
+/**
+ * @author Sibgatullov Marat
+ */
+public class WorkWithClasses implements IWorkWithHTML{
+
+
+    /**
+     * @param args the command line arguments
+     */
+
+    private static String inFileNameFirst = "C://testforsimbirsoft//1.properties";
+    private static String inFileNameSecond = "C://testforsimbirsoft//2.properties";
+    private static String outFileName = "C://testforsimbirsoft//Out.html";
+
+    public static void main(String[] args) throws FileNotFoundException, InterruptedException {
+        //Запись в файл                                //Чтение файла
+        write(outFileName, title, target, description, read(inFileNameFirst, inFileNameSecond));
+    }
+
+    public static void write(String InfileName, String title, String target, String description, List<String> linesOfConfigFile) {
+        //Определяем файл
+        File file = new File(InfileName);
+
+        try {
+            //проверяем, что если файл не существует то создаем его
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            //PrintWriter обеспечит возможности записи в файл
+            PrintWriter out = new PrintWriter(file.getAbsoluteFile());
+            try {
+                //Записываем текст в файл
+                Map<String, Integer> exp = new HashMap<>();
+                exp.put("C#", 96);
+                exp.put("Java", 2);
+                exp.put("Pascal", 120);
+                exp.put("C++", 100);
+                exp.put("C", 4);
+                String expInHTML = "";
+                int expSize = exp.size();
+                for (int i = 0; i < expSize; i++){
+                    int max = 0;
+                    String keyMax = "";
+                    for (Map.Entry<String, Integer> entry : exp.entrySet()){
+                        if (entry.getValue() > max){
+                            max = entry.getValue();
+                            keyMax = entry.getKey();
+                        }
+                    }
+                    expInHTML += keyMax;
+                    expInHTML += ":";
+                    expInHTML += max;
+                    if (i != expSize - 1){
+                        expInHTML += ",";
+                    }
+                    exp.remove(keyMax);
+                }
+                linesOfConfigFile.add(2, telephoneNumber);
+                List<String> mainWordsInResume = new ArrayList<>();
+                mainWordsInResume.add(fioInTable);
+                mainWordsInResume.add(dobInTable);
+                mainWordsInResume.add(telInTable);
+                mainWordsInResume.add(emailInTable);
+                mainWordsInResume.add(skypeInTable);
+                List<OutStringToPrint> outStringToPrint = new ArrayList<>();
+                outStringToPrint.add(new OutStringToPrint(title));
+                outStringToPrint.add(new OutStringToPrint(pictureInTableBegin + linesOfConfigFile.get(5) + pictureInTableEnd));
+                for (int i = 0; i < mainWordsInResume.size(); i++)
+                    outStringToPrint.add(new OutStringToPrint(mainWordsInResume.get(i) + linesOfConfigFile.get(i)));
+                outStringToPrint.add(new OutStringToPrint(target));
+                outStringToPrint.add(new OutStringToPrint(linesOfConfigFile.get(6)));
+                outStringToPrint.add(new OutStringToPrint(description));
+                outStringToPrint.add(new OutStringToPrint(expInHTML));
+                for (OutStringToPrint i: outStringToPrint)
+                    out.print(i.getName());
+            } finally {
+                //После чего мы должны закрыть файл
+                //Иначе файл не запишется
+                out.close();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static List<String> read(String inFileNameFirst, String inFileNameSecond) throws FileNotFoundException, InterruptedException {
+        exists(inFileNameFirst);
+        exists(inFileNameSecond);
+        Map<String, String> propertyInMap = new HashMap<>();
+        Thread firstPropertyFile = new PropertyReader(inFileNameFirst, propertyInMap);
+        Thread secondPropertyFile = new PropertyReader(inFileNameSecond, propertyInMap);
+        firstPropertyFile.start();
+        secondPropertyFile.start();
+        firstPropertyFile.join();
+        secondPropertyFile.join();
+        IWorkWithProperty iWorkWithProperty = new PropertyClass(propertyInMap.get("FIO"), propertyInMap.get("DOB"), propertyInMap.get("email"), propertyInMap.get("skype"), propertyInMap.get("avatar"), propertyInMap.get("target"));
+        return iWorkWithProperty.getPropertyName();
+    }
+
+    private static void exists(String InfileName) throws FileNotFoundException {
+        File file = new File(InfileName);
+        if (!file.exists()) {
+            throw new FileNotFoundException(file.getName());
+        }
+    }
+}
