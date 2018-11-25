@@ -49,7 +49,7 @@ public class PropertyReader2 extends Thread {
                     propertyInMap.put("DOB", property.getProperty("DOB"));
                     propertyInMap.put("email", property.getProperty("email"));
                     break;
-                case "resources/2.properties":
+                case "C://testforsimbirsoft//2.properties":
                     propertyInMap.put("skype", property.getProperty("skype"));
                     propertyInMap.put("avatar", property.getProperty("avatar"));
                     propertyInMap.put("target", property.getProperty("target"));
